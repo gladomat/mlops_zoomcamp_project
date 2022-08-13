@@ -1,0 +1,37 @@
+###
+### A complete description of a Prefect Deployment for flow 'main-flow'
+###
+name: diamond_train_pipeline
+description: null
+version: e17aca0fd6276e0aa65d8dddf204f918
+tags:
+- diamond_train_pipeline
+parameters: {'name': 'diamonds'}
+schedule: null
+infrastructure:
+  type: process
+  env: {}
+  labels: {}
+  name: null
+  command:
+  - python
+  - -m
+  - prefect.engine
+  stream_output: true
+###
+### DO NOT EDIT BELOW THIS LINE
+###
+flow_name: main-flow
+manifest_path: main_flow-manifest.json
+storage:
+  basepath: /home/glad/Documents/practice/mlops_zoomcamp_project
+  _is_anonymous: true
+  _block_document_name: anonymous-6693549e-7fc7-4919-baf8-e2a1409d85ce
+  _block_document_id: faa29cc2-15e1-4410-a3ff-28d1b132f3eb
+  _block_type_slug: local-file-system
+parameter_openapi_schema:
+  title: Parameters
+  type: object
+  properties: {}
+  required: null
+  definitions: null
